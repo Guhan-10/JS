@@ -1,0 +1,32 @@
+body{
+    background-color: #191919;
+    font-family: arial;
+    color: #ffffff;
+}
+p{
+    margin: 15px 5px;
+}
+h1{
+    color: white;
+}
+.icon{
+    height: 120px;
+    width: 120px;
+    background-color: #191919;
+    border: 2px dotted #ffffff;
+    border-radius: 60px;
+    margin: 0px 5px;
+}
+.icon-img{
+    width: 50px;
+}
+.result{
+    font-size: 35px;
+    font-weight: bold;
+}
+.reset-button,.auto-play-button{
+    font-size: 15px;
+    font-family: arial;
+    padding: 10px;
+    margin: 0px 5px;
+}
