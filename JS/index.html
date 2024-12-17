@@ -8,14 +8,14 @@
         <h1>Rock Paper Sicssor</h1>
         <button class="icon" onclick="
             computerMove()
-            playerMove('Rock')"><img class="icon-img" src="icons/rock-emoji.png"></button>
+            playerMove('Rock');"><img class="icon-img" src="icons/rock-emoji.png"></button>
         <button class="icon" onclick="
             computerMove()
-            playerMove('Paper')
+            playerMove('Paper');
         "><img class="icon-img" src="icons/paper-emoji.png"></button>
         <button class="icon" onclick="
             computerMove()
-            playerMove('Scissor')
+            playerMove('Scissor');
         "><img class="icon-img" src="icons/scissor-emoji.png"></button>
         <p class="result"></p>
         <p class="moves"></p>
@@ -24,8 +24,8 @@
             score.Win=0
             score.Lose=0
             score.Tie=0
-            localStorage.removeItem('score')
-            updateScore()
+            localStorage.removeItem('score');
+            updateScore();
         ">Reset Score</button>
         <button class="auto-play-button" onclick="autoPlay()">Auto Play</button>
         <script src="script/rock-papper-sicssors.js"></script>

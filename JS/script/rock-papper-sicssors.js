@@ -1,17 +1,18 @@
 function computerMove(){
-    let compMove=''
-    a=Math.random()
-    if(0<a && a<1/3){
-        compMove='Rock'
+    let compMove = ''
+    let a = Math.random()
+    if(0 < a && a < 1/3){
+        compMove = 'Rock'
     }
-    else if(1/3<a && a<2/3){
-        compMove='Paper'
+    else if(1/3 < a && a < 2/3){
+        compMove = 'Paper'
     }
-    else{2/3<a && a<1
-        compMove='Scissor'
+    else {
+        compMove = 'Scissor'
     }
     return compMove
 }
+ 
 function playerMove(selection)
 {
     const compMove=computerMove()
@@ -75,10 +76,10 @@ let intervalId=false
 function autoPlay(){
 if(!intervalId)
 {
-setInterval(function(){
+intervalId=setInterval(function(){
     let selection=computerMove()
     playerMove(selection)
-    intervalId=true
+
     document.querySelector('.auto-play-button').innerHTML='Reset Play'
 },1000)
 }else{
